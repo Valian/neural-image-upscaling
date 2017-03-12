@@ -30,3 +30,5 @@ anakonda_1  |     Copy/paste this URL into your browser when you connect for the
 anakonda_1  |     to login with a token:
 anakonda_1  |         http://localhost:8888/?token=f147dd59eff55fafa7a693e52d35052b69e2603cde52202c
 ```
+
+Now Jupyter notebook should be available under `localhost:8888` address.
