@@ -1,16 +1,7 @@
 version: '2'
 services:
   anakonda:
-    image: continuumio/anaconda3
-    command: /bin/bash -c "
-      /opt/conda/bin/conda install jupyter
-        -y
-        --quiet &&
-      /opt/conda/bin/jupyter notebook
-        --notebook-dir=/opt/notebooks
-        --ip='*'
-        --port=8888
-        --no-browser"
+    build: .
     ports:
     - 8888:8888
     volumes:
