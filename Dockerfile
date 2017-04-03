@@ -1,6 +1,6 @@
 FROM continuumio/anaconda3
 
-RUN /opt/conda/bin/conda install jupyter tensorflow -y --quiet
+RUN /opt/conda/bin/conda install jupyter tensorflow keras -y --quiet
 
 EXPOSE 8888
 
