@@ -30,8 +30,7 @@ ENV KERAS_BACKEND=tensorflow
 RUN conda install -y python=${python_version} && \
     pip install --upgrade pip && \
     pip install tensorflow-gpu && \
-    conda install Pillow pandas mkl pyyaml six h5py && \
-    conda install pygpu && \
+    conda install Pillow mkl six pygpu jupyter -y --quiet && \
     git clone git://github.com/fchollet/keras.git /src && pip install -e /src[tests] && \
     pip install git+git://github.com/fchollet/keras.git && \
     conda clean -yt
