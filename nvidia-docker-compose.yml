@@ -1,0 +1,17 @@
+services:
+  anakonda:
+    build: .
+    devices:
+    - /dev/nvidia0
+    - /dev/nvidiactl
+    - /dev/nvidia-uvm
+    - /dev/nvidia-uvm-tools
+    ports:
+    - 8888:8888
+    volumes:
+    - ./notebooks:/opt/notebooks
+    - nvidia_driver_375.66:/usr/local/nvidia:ro
+version: '2'
+volumes:
+  nvidia_driver_375.66:
+    external: true
