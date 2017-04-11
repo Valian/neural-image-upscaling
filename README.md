@@ -32,3 +32,9 @@ anakonda_1  |         http://localhost:8888/?token=f147dd59eff55fafa7a693e52d350
 ```
 
 Now Jupyter notebook should be available under `localhost:8888` address.
+
+# GPU support 
+
+You need to install [nvidia-docker](https://github.com/NVIDIA/nvidia-docker) and [nvidia-docker-compose](https://github.com/eywalker/nvidia-docker-compose) first. Then, just run:
+    
+    $ nvidia-docker-compose up
